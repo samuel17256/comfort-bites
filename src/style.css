@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #c2531a;    /* Deep Orange / Terracotta */
+  --color-secondary: #f5ede0;  /* Cream / Soft Beige */
+  --color-accent: #7a4928;     /* Warm Brown */
+}
