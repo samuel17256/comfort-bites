@@ -51,14 +51,12 @@ No installation needed for the HTML. Just make sure Tailwind CLI is set up to co
 
 ### Tailwind CLI Setup
 ```bash
-# Install Tailwind CLI (once)
-npm install -D tailwindcss
+# Install node_modules
+npm install 
 
 # Watch for changes during development
-npx tailwindcss -i ./style.css -o ./output.css --watch
+npx @tailwindcss/cli -i ./src/style.css -o ./src/output.css --watch
 
-# Build for production
-npx tailwindcss -i ./style.css -o ./output.css --minify
 ```
 
 > Make sure each HTML file links to the compiled `output.css`, not `style.css` directly.
