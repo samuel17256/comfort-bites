@@ -1,7 +1,10 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@500;700&display=swap");
 
 @theme {
-  --color-primary: #c2531a;    /* Deep Orange / Terracotta */
-  --color-secondary: #f5ede0;  /* Cream / Soft Beige */
-  --color-accent: #7a4928;     /* Warm Brown */
+  --color-primary: #c2531a; /* Deep Orange / Terracotta */
+  --color-secondary: #f5ede0; /* Cream / Soft Beige */
+  --color-accent: #7a4928; /* Warm Brown */
+  --font-sans: "Poppins", sans-serif;
+  --font-serif: "Playfair Display", serif;
 }
