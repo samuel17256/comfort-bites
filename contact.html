@@ -1,136 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comfort - Bites</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body class="bg-secondary">
-
-  <!--navbar-->
-  <nav class="flex justify-between items-center m-5 fixed top-0 right-0 left-0 z-50 bg-white h-16 ">
-    <div class="ml-20">
-      <h1 class="font-black text-2xl">Comfort Bites</h1>
-    </div>
-    <ul class="flex gap-6">
-
-      <a href="#">Home</a>
-      <a href="#">Menu</a>
-      <a href="#">About</a>
-      <a href="contact.html">Contact</a>
-    </ul>
-    <div class="mr-20">
-      <button class="bg-primary text-white w-28 h-9 rounded">Order Now</button>
-    </div>
-  </nav>
-
-     
-  <section class="max-w-7xl mx-auto px-4 py-10 mt-20">
-
-    <!-- Heading -->
-    <div class="text-center mb-10 text-primary">
-      <h1 class="text-3xl md:text-4xl font-bold">Contact Us</h1>
-      <p class="mt-2">We’d love to hear from you</p>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-
-      <!-- Contact Form -->
-      <div class="bg-secondary p-6 rounded-2xl shadow">
-        <h2 class="text-primary text-xl font-semibold mb-4">Send a Message</h2>
-
-        <form class="space-y-4">
-          <input type="text" placeholder="Your Name"
-            class="bg-secondary w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black" />
-
-          <input type="email" placeholder="Your Email"
-            class="bg-secondary w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black" />
-
-          <textarea rows="5" placeholder="Your Message"
-            class=" bg-secondary w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"></textarea>
-
-          <button
-            class="w-full bg-accent text-secondary py-3 rounded-lg hover:bg-primary transition">
-            Send Message
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-secondary">
+    <!--navbar-->
+    <nav class="fixed top-0 right-0 left-0 z-50 bg-white py-3">
+      <div class="flex justify-between items-center mx-auto px-6 max-w-6xl">
+        <div class="">
+          <h1 class="font-black text-2xl">Comfort Bites</h1>
+        </div>
+        <ul class="gap-6 hidden md:flex">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </ul>
+        <div class="hidden md:inline-block">
+          <button class="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold">
+            Order Now
           </button>
-        </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="max-w-6xl mx-auto px-4 py-10 mt-20">
+      <!-- Heading -->
+      <div class="text-center mb-10 text-primary">
+        <h1 class="text-3xl md:text-4xl font-bold">Contact Us</h1>
+        <p class="mt-2">We’d love to hear from you</p>
       </div>
 
-      <!-- Contact Info -->
-      <div class="space-y-6">
-      
-        <div class="bg-accent p-6 rounded-2xl shadow text-secondary hover:bg-primary">
-          <h2 class="text-xl font-semibold mb-4">Visit Us</h2>
-          <p>123 Food Street, Jos, Nigeria</p>
-          <a href="tel:+2348012345678" class="hover:text-primary transition-colors">+234 801 234 5678</a> <br>
-          <a href="mailto:hello@comfortbites.ng"
-            class="hover:text-primary transition-colors">hello@comfortbites.ng</a>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <!-- Contact Form -->
+        <div class="bg-secondary p-6 rounded-2xl shadow">
+          <h2 class="text-primary text-xl font-semibold mb-4">
+            Send a Message
+          </h2>
+
+          <form class="space-y-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="bg-secondary w-full border rounded-lg p-3 focus:outline-none focus:ring-1 focus:ring-black" required
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="bg-secondary w-full border rounded-lg p-3 focus:outline-none focus:ring-1 focus:ring-black" required
+            />
+
+            <textarea
+              rows="5"
+              placeholder="Your Message"
+              class="bg-secondary w-full border rounded-lg p-3 focus:outline-none focus:ring-1 focus:ring-black" required
+            ></textarea>
+
+            <button
+              class="w-full bg-accent text-secondary py-3 rounded-lg hover:bg-primary transition"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
 
-        <!-- Opening Hours -->
-        <div class="bg-accent p-6 rounded-2xl shadow text-secondary hover:bg-primary">
-          <h2 class="text-xl font-semibold mb-4 ">Opening Hours</h2>
-          <ul class="space-y-1">
-            <li>Monday - Friday: 9:00 AM - 10:00 PM</li>
-            <li>Saturday: 10:00 AM - 11:00 PM</li>
-            <li>Sunday: 12:00 PM - 9:00 PM</li>
+        <!-- Contact Info -->
+        <div class="space-y-6">
+          <div
+            class="bg-accent p-6 rounded-2xl shadow text-secondary"
+          >
+            <h2 class="text-xl font-semibold mb-4">Visit Us</h2>
+            <p>123 Food Street, Jos, Nigeria</p>
+            <a
+              href="tel:+2348012345678"
+              class="hover:text-primary transition-colors"
+              >+234 801 234 5678</a
+            >
+            <br />
+            <a
+              href="mailto:hello@comfortbites.ng"
+              class="hover:text-primary transition-colors"
+              >hello@comfortbites.ng</a
+            >
+          </div>
+
+          <!-- Opening Hours -->
+          <div
+            class="bg-accent p-6 rounded-2xl shadow text-secondary"
+          >
+            <h2 class="text-xl font-semibold mb-4">Opening Hours</h2>
+            <ul class="space-y-1">
+              <li>Monday - Friday: 9:00 AM - 10:00 PM</li>
+              <li>Saturday: 10:00 AM - 11:00 PM</li>
+              <li>Sunday: 12:00 PM - 9:00 PM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="mt-10">
+        <div class="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow">
+          <iframe
+            class="w-full h-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.0829611498316!2d8.888168875892257!3d9.843399475708022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10537500588cff61%3A0x2189f6392a1acaa1!2sBLOCKFUSE%20LABS!5e0!3m2!1sen!2sng!4v1774378561786!5m2!1sen!2sng"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer class="bg-[#2c1a0e] text-[#c8b49a] py-12 px-6">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <p class="font-display text-2xl font-bold text-secondary mb-2">
+            Comfort <span class="text-primary">Bites</span>
+          </p>
+          <p class="text-sm leading-relaxed">
+            Where every bite feels like home. Crafted with heart, served with
+            warmth.
+          </p>
+        </div>
+
+        <div>
+          <h4
+            class="text-secondary font-bold uppercase tracking-widest text-xs mb-4">
+            Navigate
+          </h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="index.html" class="hover:text-primary transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="menu.html" class="hover:text-primary transition-colors"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-primary transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="hover:text-primary transition-colors"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
 
-      </div>
-    </div>
-
-    <!-- Map -->
-    <div class="mt-10">
-      <div class="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow">
-       <iframe
-          class="w-full h-full"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.0829611498316!2d8.888168875892257!3d9.843399475708022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10537500588cff61%3A0x2189f6392a1acaa1!2sBLOCKFUSE%20LABS!5e0!3m2!1sen!2sng!4v1774378561786!5m2!1sen!2sng"
-          frameborder="0"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-
-  </section>
-
-  <!--footer-->
-  <footer class=" bg-[#2c1a0e] text-[#c8b49a] py-12 px-6">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-
-      <div>
-        <p class="font-display text-2xl font-bold text-secondary mb-2">Comfort <span
-            class="text-primary">Bites</span></p>
-        <p class="text-sm leading-relaxed">Where every bite feels like home. Crafted with heart, served with warmth.</p>
-      </div>
-
-      <div>
-        <h4 class="text-secondary font-bold uppercase tracking-widest text-xs mb-4">Navigate</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
-          <li><a href="menu.html" class="hover:text-primary transition-colors">Menu</a></li>
-          <li><a href="about.html" class="hover:text-primary transition-colors">About</a></li>
-          <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-secondary font-bold uppercase tracking-widest text-xs mb-4">Contact</h4>
-        <ul class="space-y-2 text-sm">
-          <li>Blockfuse labs jos</li>
-          <li><a href="tel:+2348012345678" class="hover:text-primary transition-colors">+234 801 234 5678</a></li>
-          <li><a href="mailto:hello@comfortbites.ng"
-            class="hover:text-primary transition-colors">hello@comfortbites.ng</a></li>
-        </ul>
-      </div>
-
+        <div>
+          <h4
+            class="text-secondary font-bold uppercase tracking-widest text-xs mb-4"
+          >
+            Contact
+          </h4>
+          <ul class="space-y-2 text-sm">
+            <li>Blockfuse labs Jos</li>
+            <li>
+              <a
+                href="tel:+2348012345678"
+                class="hover:text-primary transition-colors"
+                >+234 801 234 5678</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:hello@comfortbites.ng"
+                class="hover:text-primary transition-colors"
+                >hello@comfortbites.ng</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-[#3d2510] text-xs text-center text-[#7a5c48]">
-            &copy; 2025 Comfort Bites Restaurant. All rights reserved.
-        </div>
+      </div>
+      <div
+        class="max-w-6xl mx-auto mt-10 pt-6 border-t border-[#3d2510] text-xs text-center text-[#7a5c48]"
+      >
+        &copy; 2025 Comfort Bites Restaurant. All rights reserved.
+      </div>
     </footer>
-
-  
-</body>
+  </body>
 </html>
