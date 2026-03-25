@@ -1,12 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comfort - Bites</title>
+    <title>Comfort-Bites</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    <h2 class="text-yellow-700">hjj</h2>
+
+<body class="bg-secondary">
+    <!-- Home-Page -->
+
+    <!-- Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 md:px-10 h-16 flex items-center justify-between">
+
+            <!-- Logo -->
+            <h1 class=" font-bold text-2xl text-primary">Comfort <span class="text-accent">Bites</span> </h1>
+
+            <ul class="hidden md:flex gap-8 text-sm text-[#5a3520] font-medium">
+                <li><a href="index.html" class="text-primary font-bold">Home</a></li>
+                <li><a href="menu.html" class="hover:text-primary">Menu</a></li>
+                <li><a href="about.html" class="hover:text-primary">About</a></li>
+                <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <button
+                    class="bg-primary text-white px-5 py-2 rounded-full cursor-pointer text-sm font-bold hover:bg-accent">
+                    Order Now
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- hero -->
+        <section class="max-w-8xl mx-auto">
+            <div class="relative min-h-screen" style="background-image: url(src/public/meat-pic.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <div class="absolute inset-0 bg-black/60 z-0"></div>
+                <div class="text-center pt-48 fade-animation relative z-10">
+                    <h1 class="text-white text-6xl font-bold">Delicious Comfort Food</h1>
+                    <p class="mt-3 text-white font-black text-2xl">Made Just For You</p>
+                    <div class="mt-5">
+                        <span class="text-green-400 text-lg font-medium ">OPen Daily: 9AM - 10PM</span>
+                    </div>
+                    <div class="mt-10 flex justify-center gap-5">
+                        <a href="contact.html"><button
+                                class="bg-primary text-white px-5 py-2.5 cursor-pointer rounded">Order Now</button></a>
+                        <a href="menu.html"><button
+                                class="px-5 py-2.5 cursor-pointer rounded border-black border bg-white text-black">View
+                                Menu</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Features -->
+
+
+        <section class="mt-10 max-w-6xl mx-auto">
+            <h2 class="text-primary font-black text-2xl text-center">Our Favourites</h2>
+            <div class="w-28 h-0.5 bg-accent mx-auto mb-6"></div>
+
+            <div class="grid grid-cols-1 gap-4 m-5 md:grid-cols-4">
+
+
+
+                <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden mb-10">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Food"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold">Delicious Burger</h2>
+                        <p class="text-gray-500 text-sm mt-1">Juicy grilled beef with fresh veggies</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-lg font-bold">$12.99</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-xl hover:bg-accent transition">Order
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden mb-10">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Food"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold">Delicious Burger</h2>
+                        <p class="text-gray-500 text-sm mt-1">Juicy grilled beef with fresh veggies</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-lg font-bold">$12.99</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-xl hover:bg-accent transition">Order
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden mb-10">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Food"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold">Delicious Burger</h2>
+                        <p class="text-gray-500 text-sm mt-1">Juicy grilled beef with fresh veggies</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-lg font-bold">$12.99</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-xl hover:bg-accent transition">Order
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden mb-10">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Food"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold">Delicious Burger</h2>
+                        <p class="text-gray-500 text-sm mt-1">Juicy grilled beef with fresh veggies</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-lg font-bold">$12.99</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-xl hover:bg-accent transition">Order
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Testimonials Section -->
+        <section class="max-w-6xl mx-auto mb-10">
+            <h2 class="text-2xl text-primary font-bold text-center ">Testimonials</h2>
+            <div class="w-28 h-0.5 bg-accent mx-auto mb-3"></div>
+
+
+            <div class="grid gap-6 md:grid-cols-4">
+
+                 <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <div class="flex items-center gap-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-12 h-12 rounded-full" />
+                        <div>
+                            <h4 class="font-bold">John D.</h4>
+                            <p class="text-sm text-gray-500">Food Blogger</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">"Absolutely amazing! The burger was juicy, fresh, and full of flavor. Delivery was super fast too!"</p>
+                    <div class="mt-3 text-yellow-400">★★★★★</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <div class="flex items-center gap-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-12 h-12 rounded-full" />
+                        <div>
+                            <h4 class="font-bold">Sarah K.</h4>
+                            <p class="text-sm text-gray-500">Chef</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">"One of the best dining experiences I've had in a long time. The
+                        flavors are incredible!"</p>
+                    <div class="mt-3 text-yellow-400">★★★★★</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <div class="flex items-center gap-4">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" class="w-12 h-12 rounded-full" />
+                        <div>
+                            <h4 class="font-bold">Mike T.</h4>
+                            <p class="text-sm text-gray-500">Entrepreneur</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">"Great service, cozy atmosphere, and the food is just perfect. Highly
+                        recommended!"</p>
+                    <div class="mt-3 text-yellow-400">★★★★★</div>
+                </div>
+
+
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <div class="flex items-center gap-4">
+                        <img src="https://randomuser.me/api/portraits/men/12.jpg" class="w-12 h-12 rounded-full" />
+                        <div>
+                            <h4 class="font-bold">David L.</h4>
+                            <p class="text-sm text-gray-500">Student</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">"Affordable, delicious, and quick. Perfect for my busy schedule. Love
+                        it!"</p>
+                    <div class="mt-3 text-yellow-400">★★★★☆</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA Banner -->
+        <section class="max-w-6xl mx-auto">
+            <div class="bg-[#2c1a0e] text-white  p-8 flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-2xl font-bold">Hungry? Order Now!</h2>
+                    <p class="text-sm">Get your favorite meals delivered fast.</p>
+                </div>
+                <button
+                    class="bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-secondary hover:text-primary transition">
+                    Order Now
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-[#2c1a0e] text-[#c8b49a] py-12 px-6 mt-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <div>
+                <p class="font-display text-2xl font-bold text-secondary mb-2">Comfort <span
+                        class="text-primary">Bites</span></p>
+                <p class="text-sm leading-relaxed">Where every bite feels like home. Crafted with heart, served with
+                    warmth.</p>
+            </div>
+
+            <div>
+                <h4 class="text-secondary font-bold uppercase tracking-widest text-xs mb-4">Navigate</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="menu.html" class="hover:text-primary transition-colors">Menu</a></li>
+                    <li><a href="about.html" class="hover:text-primary transition-colors">About</a></li>
+                    <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-secondary font-bold uppercase tracking-widest text-xs mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>Blockfuse labs jos</li>
+                    <li><a href="tel:+2348012345678" class="hover:text-primary transition-colors">+234 801 234 5678</a>
+                    </li>
+                    <li><a href="mailto:hello@comfortbites.ng"
+                            class="hover:text-primary transition-colors">hello@comfortbites.ng</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-[#3d2510] text-xs text-center text-[#7a5c48]">
+            &copy; 2025 Comfort Bites Restaurant. All rights reserved.
+        </div>
+    </footer>
 </body>
+
 </html>
